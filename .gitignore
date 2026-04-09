@@ -49,8 +49,5 @@ bot/warnings.db-wal
 Thumbs.db
 Desktop.ini
 
-# Nested dashboard repository
-# web_dashboard_ts currently contains its own .git directory.
-# Ignore it from the root repo so root-level `git add .` does not fail.
-web_dashboard_ts/
-.gitignore
+# Nested dashboard git backup (created when converting nested repo to normal folder)
+web_dashboard_ts/.git_nested_backup_*/
