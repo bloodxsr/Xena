@@ -1,0 +1,56 @@
+# ------------------------------------------------------------
+# Fluxer Bot + Web Dashboard (root workspace ignore rules)
+# ------------------------------------------------------------
+
+# Python cache and build artifacts
+.vscode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Python virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Local environment files (examples remain tracked)
+.env
+.env.*
+!.env.example
+!.env.*.example
+web_dashboard_ts/.env
+web_dashboard_ts/.env.*
+
+# Sensitive local token/key files
+bot/token.txt
+bot/google.txt
+
+# Runtime SQLite files
+bot/warnings.db
+bot/warnings.db-shm
+bot/warnings.db-wal
+*.db-shm
+*.db-wal
+
+# Logs and transient runtime output
+*.log
+*.out
+*.err
+*.pid
+
+# OS noise
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Nested dashboard repository
+# web_dashboard_ts currently contains its own .git directory.
+# Ignore it from the root repo so root-level `git add .` does not fail.
+web_dashboard_ts/
+.gitignore
