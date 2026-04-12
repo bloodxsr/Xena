@@ -28,13 +28,25 @@ web_dashboard_ts/.env
 web_dashboard_ts/.env.*
 
 # Sensitive local token/key files
-bot/token.txt
-bot/google.txt
+bot_js/token.txt
+bot_js/google.txt
+
+# JavaScript and Rust build artifacts
+node_modules/
+bot_js/node_modules/
+bot_js/raid_ml_sidecar/target/
+bot_js/.npm/
+bot_js/npm-debug.log*
+bot_js/yarn-debug.log*
+bot_js/yarn-error.log*
+bot_js/pnpm-debug.log*
 
 # Runtime SQLite files
-bot/warnings.db
-bot/warnings.db-shm
-bot/warnings.db-wal
+bot_js/data/warnings.db
+bot_js/data/warnings.db-shm
+bot_js/data/warnings.db-wal
+bot_js/data/*.db
+bot_js/data/words.json
 *.db-shm
 *.db-wal
 
