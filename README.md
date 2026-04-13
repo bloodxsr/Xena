@@ -1,4 +1,4 @@
-﻿# Fluxer Moderation Platform
+﻿# Nexued
 
 This repository now runs on a JavaScript/TypeScript stack only.
 
