@@ -41,9 +41,21 @@ bot_js/npm-debug.log*
 bot_js/yarn-debug.log*
 bot_js/yarn-error.log*
 bot_js/pnpm-debug.log*
+bot_js/coverage/
 web_dashboard_ts/node_modules/
 web_dashboard_ts/.next/
+web_dashboard_ts/.npm/
+web_dashboard_ts/.turbo/
+web_dashboard_ts/.vercel/
+web_dashboard_ts/npm-debug.log*
+web_dashboard_ts/yarn-debug.log*
+web_dashboard_ts/yarn-error.log*
+web_dashboard_ts/pnpm-debug.log*
+web_dashboard_ts/coverage/
 web_dashboard_ts/tsconfig.tsbuildinfo
+*.tsbuildinfo
+coverage/
+.cache/
 
 # Runtime SQLite files
 bot_js/data/warnings.db
@@ -64,6 +76,12 @@ bot_js/data/words.json
 .DS_Store
 Thumbs.db
 Desktop.ini
+
+# Editor noise
+.idea/
+*.swp
+*.swo
+*.tmp
 
 # Nested dashboard git backup (created when converting nested repo to normal folder)
 web_dashboard_ts/.git_nested_backup_*/
