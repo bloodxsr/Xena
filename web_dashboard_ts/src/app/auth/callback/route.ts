@@ -1,5 +1,8 @@
-import { GET as oauthCallbackGet } from "@/app/oauth/callback/route";
+import type { NextRequest } from "next/server";
+import { handleOAuthCallback } from "@/lib/oauth-callback-handler";
 
-export async function GET(request: Request) {
-  return oauthCallbackGet(request);
+export const runtime = "nodejs";
+
+export async function GET(request: NextRequest) {
+  return handleOAuthCallback(request);
 }
